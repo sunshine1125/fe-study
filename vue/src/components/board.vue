@@ -30,8 +30,8 @@ export default{
         playChess(i){
         	if(!this.isAdd){
         		//var html = event.target.innerHTML;
-	        	var oLi = document.getElementsByClassName('btn');
-	        	if(oLi[i].innerHTML==''){//如果所点击的li内容为空
+	        	let oLi = document.getElementsByClassName('btn');
+	        	if(oLi[i].innerHTML===''){//如果所点击的li内容为空
 	        		if(this.flag){//如果flag为true
 	        			oLi[i].innerHTML = this.playerO;//填入“O”
 	        			this.turn = '该playerX了';
@@ -44,8 +44,8 @@ export default{
 	        			this.arrNum.push(i);
 	        		}
 
-		        	var sortX = this.arrPlayx.sort(this.sortNumber);//把存棋子的数组按照大小排序
-		        	var sortO = this.arrPlayo.sort(this.sortNumber);//把存棋子的数组按照大小排序
+		        	let sortX = this.arrPlayx.sort(this.sortNumber);//把存棋子的数组按照大小排序
+		        	let sortO = this.arrPlayo.sort(this.sortNumber);//把存棋子的数组按照大小排序
 		        	if(this.flag){
 		        		this.hasWin(sortO,'playerO胜');
 		        	}else{
@@ -57,7 +57,7 @@ export default{
         	}
         },
         hasWin(arr,info){
-			var lines = [
+			const lines = [
 				[0, 1, 2],
 				[3, 4, 5],
 				[6, 7, 8],
@@ -66,11 +66,11 @@ export default{
 				[2, 5, 8],
 				[0, 4, 8],
 				[2, 4, 6]
-			]
-			for (var i = 0, len = lines.length; i < len; i++) {
+			];
+			for (let i = 0, len = lines.length; i < len; i++) {
 				if(arr.length >= lines[i].length){
-					var arrStr = arr.toString();
-					if(arrStr.indexOf(lines[i][0]) != -1 && arrStr.indexOf(lines[i][1]) != -1 &&arrStr.indexOf(lines[i][2]) != -1){
+					let arrStr = arr.toString();
+					if(arrStr.indexOf(lines[i][0]) !== -1 && arrStr.indexOf(lines[i][1]) !== -1 &&arrStr.indexOf(lines[i][2]) !== -1){
 						this.turn = info;
 						this.isAdd = true;
 					}
@@ -78,13 +78,13 @@ export default{
 			}
 		},
 		reStart(){//重新开始
-			var liDomList = document.getElementsByTagName('li');
-			if(liDomList[this.arrNum.length-1].innerHTML == 'X'){
+			let liDomList = document.getElementsByTagName('li');
+			if(liDomList[this.arrNum.length-1].innerHTML === 'X'){
 				this.turn = '该playerO了';
 			}else{
 				this.turn = '该playerX了';
 			}
-			for(var i = 0,len = this.arrNum.length; i < len; i++){//把对应的li的内容清空
+			for(let i = 0,len = this.arrNum.length; i < len; i++){//把对应的li的内容清空
 				liDomList[this.arrNum[i]].innerHTML = null;
 				liDomList[this.arrNum[i]].style.color = '#000';
 			}
@@ -95,12 +95,12 @@ export default{
 
 		},
 		cancel(){//撤销操作
-			var len = this.arrNum.length;
-			if(this.isAdd == false){
+			let len = this.arrNum.length;
+			if(this.isAdd === false){
 				if(len > 0 ){
-					var index  = this.arrNum[len-1];
-					var aLi = document.getElementsByTagName('li');
-					if(aLi[index].innerHTML == 'O'){
+					let index  = this.arrNum[len-1];
+					let aLi = document.getElementsByTagName('li');
+					if(aLi[index].innerHTML === 'O'){
 						this.removeByValue(this.arrPlayo,index);//把对应的元素从双方数组中删除
 					}else{
 						this.removeByValue(this.arrPlayx,index);//把对应的元素从双方数组中删除
@@ -113,8 +113,8 @@ export default{
 			}
 		},
 		removeByValue(arr, val) {//删除数组中指定值
-		  for(var i = 0; i < arr.length; i++) {
-		    if(arr[i] == val) {
+		  for(let i = 0; i < arr.length; i++) {
+		    if(arr[i] === val) {
 		      arr.splice(i, 1);
 		      break;
 		    }
@@ -127,15 +127,15 @@ export default{
 		}
 	},
 	watch: {
-		turn : function(news,olds){//监听turn的变化，高亮显示赢家
-			var aLi = document.getElementsByTagName('li');
-			if(news == 'playerO胜'){
+		turn : function(news){//监听turn的变化，高亮显示赢家
+			let aLi = document.getElementsByTagName('li');
+			if(news === 'playerO胜'){
 				let len = this.arrPlayo.length;
 				for(let i = 0;i < len; i++){
 					aLi[this.arrPlayo[i]].style.color = 'red';
 				}
 			}
-			if(news == 'playerX胜'){
+			if(news === 'playerX胜'){
 				let len = this.arrPlayx.length;
 				for(let i = 0;i < len; i++){
 					aLi[this.arrPlayx[i]].style.color = 'red';
@@ -184,7 +184,7 @@ export default{
 		font-size: 30px;
 		list-style: none;
 		text-align: center;
-		caption-side: #000;
+		/*caption-side: #000;*/
 	}
 	button{
 		outline: none;
