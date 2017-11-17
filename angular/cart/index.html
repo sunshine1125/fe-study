@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>angularjs购物车</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.bootcss.com/angular.js/1.6.6/angular.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+<div ng-app="cart" ng-controller="cartsController" >
+  <table ng-show="cartData.data.length">
+    <thead>
+      <tr>
+        <th>
+          {{flag}}
+          <input ng-checked="flag" ng-click="chooseAll()" type="checkbox">
+        </th>
+        <th ng-repeat="title in titles">{{title}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="product in cartData.data">
+        <td>
+          {{product.hasChecked}}
+          <input ng-checked="product.hasChecked" ng-click="chooseItself(product)" type="checkbox">
+        </td>
+        <td class="name">
+          <p>{{product.title}}</p>
+        </td>
+        <td class="price">
+          {{product.price}}
+        </td>
+        <td class="num">
+          <input type="number" min="0" ng-model="product.num">
+        </td>
+        <td class="total">
+          {{product.price * product.num}}
+        </td>
+        <td>
+          <button ng-click="remove(product.id)">删除</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div ng-show="cartData.data.length" class="totalPrice">
+    <span>已选商品总件数 {{totalNum()}}</span>
+    <span>已选商品总价 {{totalPrice()}}</span>
+    <button ng-click="clearAll(cartData.data)">清空购物车</button>
+  </div>
+  <p class="nothing" ng-show="!cartData.data.length">您的购物车还没有商品，请尽快去添加吧！</p>
+</div>
+</body>
+</html>
