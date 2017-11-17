@@ -16,17 +16,15 @@
     <thead>
       <tr>
         <th>
-          {{flag}}
           <input ng-checked="flag" ng-click="chooseAll()" type="checkbox">
         </th>
         <th ng-repeat="title in titles">{{title}}</th>
       </tr>
     </thead>
     <tbody>
-      <tr ng-repeat="product in cartData.data">
+      <tr ng-repeat="(index, product) in cartData.data">
         <td>
-          {{product.hasChecked}}
-          <input ng-checked="product.hasChecked" ng-click="chooseItself(product)" type="checkbox">
+          <input ng-checked="product.hasChecked" ng-click="checkOne(index)" type="checkbox">
         </td>
         <td class="name">
           <p>{{product.title}}</p>

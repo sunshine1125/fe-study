@@ -6,27 +6,30 @@ app.controller('cartsController',  ['$scope', 'cartFactory', function ($scope, c
   // 计算商品总价
   $scope.totalPrice = function() {
     let sum = 0;
-    if($scope.flag) {
-      angular.forEach($scope.cartData.data, function(value) {
-        if(value.hasChecked) {
-          sum += value.num * value.price;
-        }else{
-          $scope.flag = false;
+    let count = 0;
+    angular.forEach($scope.cartData.data, function(value) {
+      if(value.hasChecked) {
+        count++;
+        if(count === $scope.cartData.data.length ){// 如果商品全部被选中，则为全选
+          $scope.flag = true;
         }
-      });
-    }
+        sum += value.num * value.price;
+      }else{
+        $scope.flag = false;
+      }
+    });
     return sum;
   };
   // 计算商品总数量
   $scope.totalNum = function() {
     let sum = 0;
-    if($scope.flag) {
-      angular.forEach($scope.cartData.data, function(value) {
-        if(value.hasChecked) {
-          sum += value.num;
-        }
-      });
-    }
+    angular.forEach($scope.cartData.data, function(value) {
+      if(value.hasChecked) {
+        sum += value.num;
+      }else{
+        $scope.flag = false;
+      }
+    });
     return sum;
   };
   // 清空购物车
@@ -48,18 +51,12 @@ app.controller('cartsController',  ['$scope', 'cartFactory', function ($scope, c
       value.hasChecked = $scope.flag;
     })
   };
-  $scope.chooseItself = function(obj) {
-
-    return !obj.hasChecked;
+  // 判断单选
+  $scope.checkOne = function(index) {
+    $scope.cartData.data[index].hasChecked = !$scope.cartData.data[index].hasChecked;
+    return $scope.cartData.data[index].hasChecked;
   };
-  // 当flag改变时，每个商品前的复选框都改变
-  // $scope.$watch('flag', function(newValue, oldValue) {
-  //   angular.forEach($scope.cartData.data, function(value) {
-  //     if(value.hasChecked === oldValue) {
-  //       value.hasChecked = newValue;
-  //     }
-  //   })
-  // });
+
 }]);
 
 app.factory('cartFactory', function() {
