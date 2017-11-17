@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+table{
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+}
+table tr{
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+  box-sizing: border-box;
+}
+table tr th,table tr td{
+  border: 0;
+}
+.totalPrice{
+  width: 100%;
+  height: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.totalPrice button,.totalPrice span{
+  margin-right: 30px;
+}
+p.nothing{
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 30px;
+}
