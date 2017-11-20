@@ -41,3 +41,7 @@ p.nothing{
   text-align: center;
   font-size: 30px;
 }
+.num input{
+  width: 30%;
+  text-align: center;
+}
