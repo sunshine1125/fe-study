@@ -2,20 +2,29 @@
   margin: 0;
   padding: 0;
 }
-table{
-  width: 80%;
-  height: auto;
-  margin: 20px auto;
-}
-table tr{
-  height: 50px;
-  line-height: 50px;
+/*table{*/
+  /*width: 80% !important;*/
+  /*height: auto;*/
+  /*margin: 20px auto;*/
+/*}*/
+/*table tr{*/
+  /*height: 50px;*/
+  /*line-height: 50px;*/
+  /*text-align: center;*/
+  /*border-bottom: 2px solid #ccc;*/
+  /*box-sizing: border-box;*/
+/*}*/
+/*table tr th,table tr td{*/
+  /*border: 0;*/
+/*}*/
+table tr th{
   text-align: center;
-  border-bottom: 2px solid #ccc;
-  box-sizing: border-box;
 }
-table tr th,table tr td{
-  border: 0;
+table tr td{
+  text-align: center;
+}
+button{
+  outline: none!important;
 }
 .totalPrice{
   width: 100%;

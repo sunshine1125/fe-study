@@ -57,6 +57,18 @@ app.controller('cartsController',  ['$scope', 'cartFactory', function ($scope, c
     $scope.cartData.data[index].hasChecked = !$scope.cartData.data[index].hasChecked;
     return $scope.cartData.data[index].hasChecked;
   };
+  // 增加数量
+  $scope.addNum = function(index) {
+    $scope.cartData.data[index].num ++;
+  }
+  // 减少数量
+  $scope.reduceNum = function(index) {
+    if($scope.cartData.data[index].num === 1) {
+
+    }else{
+      $scope.cartData.data[index].num --;
+    }
+  }
 
 }]);
 
