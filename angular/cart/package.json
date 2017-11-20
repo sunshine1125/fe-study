@@ -1,0 +1,11 @@
+{
+  "name": "fe-study",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mafeifan/fe-study.git",
+  "author": "finley <mafeifan@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.6.6"
+  }
+}

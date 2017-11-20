@@ -10,7 +10,8 @@ app.controller('cartsController',  ['$scope', 'cartFactory', function ($scope, c
     angular.forEach($scope.cartData.data, function(value) {
       if(value.hasChecked) {
         count++;
-        if(count === $scope.cartData.data.length ){// 如果商品全部被选中，则为全选
+        // 如果商品全部被选中，则为全选
+        if(count === $scope.cartData.data.length ){
           $scope.flag = true;
         }
         sum += value.num * value.price;
