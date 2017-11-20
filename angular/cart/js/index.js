@@ -115,7 +115,5 @@ app.factory('cartFactory', function($http) {
     //   ]
     // };
    }
-
 });
-//
-// app.factory('cartFactory', function($http) {})
+
