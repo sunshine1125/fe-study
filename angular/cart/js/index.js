@@ -85,35 +85,14 @@ app.factory('cartFactory', function($http) {
   function getCartList() {
 
     return $http.get('http://rapapi.org/mockjsdata/29387/getCartList');
-      // .then(function(res){
-      //   console.log(res.data);
-      //   return res.data;
-      // });
-    // return { //{data:Array(3)}
-    //   "data": [
-    //     {
-    //       "id": 0,
-    //       "title": "demo1",
-    //       "num": 1,
-    //       "price": 10,
-    //       "hasChecked": true
-    //     },
-    //     {
-    //       "id": 1,
-    //       "title": "demo2",
-    //       "num": 3,
-    //       "price": 12,
-    //       "hasChecked": true
-    //     },
-    //     {
-    //       "id": 2,
-    //       "title": "demo3",
-    //       "num": 1,
-    //       "price": 6,
-    //       "hasChecked": true
-    //     }
-    //   ]
-    // };
+
    }
 });
 
+app.directive('copyRight', function(){
+    return {
+      restrict: 'E',
+      replace: 'false',
+      template: '<h5>Copyright &copy;2017</h5>'
+    }
+});

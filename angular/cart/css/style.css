@@ -45,3 +45,8 @@ p.nothing{
   width: 30%;
   text-align: center;
 }
+.right{
+  width: 100%!important;
+  text-align: center!important;
+  margin-top: 200px;
+}

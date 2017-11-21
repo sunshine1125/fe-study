@@ -6,9 +6,9 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>angularjs购物车</title>
-  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="./node_modules/angular/angular.js"></script>
+  <script src="./node_modules/angular/angular.min.js"></script>
   <script src="js/index.js"></script>
 </head>
 <body>
@@ -53,6 +53,7 @@
     <button class="btn btn-danger" ng-click="clearAll(cartData.data)">清空购物车</button>
   </div>
   <p class="nothing" ng-show="!cartData.data.length">您的购物车还没有商品，请尽快去添加吧！</p>
+  <copy-right class="right"></copy-right>
 </div>
 </body>
 </html>
