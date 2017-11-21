@@ -93,6 +93,6 @@ app.directive('copyRight', function(){
     return {
       restrict: 'E',
       replace: 'false',
-      template: '<h5>Copyright &copy;2017</h5>'
+      template: `<h5>Copyright &copy;${new Date().getFullYear()}</h5>`
     }
 });
