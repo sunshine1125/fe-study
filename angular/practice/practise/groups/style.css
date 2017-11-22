@@ -1,0 +1,17 @@
+.nav{
+  margin-top: 30px;
+}
+.nav li{
+  width: 100px;
+  height: 30px;
+  background: #eee;
+  text-align: center;
+  line-height: 30px;
+  color: #000;
+  font-size: 20px;
+  margin-top: 0;
+
+}
+.nav li.active{
+  border-left: 4px solid #0f65d2;
+}

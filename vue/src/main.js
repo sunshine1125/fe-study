@@ -11,10 +11,10 @@ const routes = [
 	{
 		path: '/', component: board
 	}
-]
+];
 const router = new VueRouter({
 	routes
-})
+});
 const vm = new Vue({
 	router
-}).$mount('#app')
+}).$mount('#app');
