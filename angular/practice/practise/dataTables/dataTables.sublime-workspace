@@ -1,0 +1,945 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"replace",
+				"replaceWith	.replaceWith()"
+			],
+			[
+				"cou",
+				"column"
+			],
+			[
+				"colu",
+				"column"
+			],
+			[
+				"each",
+				"each	.each()"
+			],
+			[
+				"cla",
+				"class_exists"
+			],
+			[
+				"edit",
+				"editHandle"
+			],
+			[
+				"remo",
+				"removeClass	.removeClass()"
+			],
+			[
+				"sli",
+				"siblings	.siblings()"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"re",
+				"removeAttr	.removeAttr()"
+			],
+			[
+				"rem",
+				"removeAttr	.removeAttr()"
+			],
+			[
+				"a",
+				"attr	.attr() - single"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"ge",
+				"getter"
+			],
+			[
+				"l",
+				"listener"
+			],
+			[
+				"fo",
+				"foreach	foreach …"
+			],
+			[
+				"tri",
+				"trigger"
+			],
+			[
+				"call",
+				"call_user_func_array"
+			],
+			[
+				"li",
+				"listeners"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"inpu",
+				"input	input - submit"
+			],
+			[
+				"load",
+				"loadDate"
+			],
+			[
+				"Ad",
+				"Advance〔class〕"
+			],
+			[
+				"ng-cl",
+				"ng-click	AngularJS"
+			],
+			[
+				"cha",
+				"changeC"
+			],
+			[
+				"$sc",
+				"$scope	AngularJS"
+			],
+			[
+				"con",
+				"controller	AngularJS"
+			],
+			[
+				"s",
+				"status"
+			],
+			[
+				"sc",
+				"success"
+			],
+			[
+				"$s",
+				"$scope	AngularJS(DI)"
+			],
+			[
+				"ng-c",
+				"ng-controller	AngularJS"
+			],
+			[
+				"upd",
+				"updateTime"
+			],
+			[
+				"up",
+				"updateTime"
+			],
+			[
+				"url",
+				"urlencode"
+			],
+			[
+				"ad",
+				"addClass"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"ng-init",
+				"ng-init=  (attribute)"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"ch",
+				"change"
+			],
+			[
+				"an",
+				"angular"
+			],
+			[
+				"ng-re",
+				"ng-repeat	AngularJS"
+			],
+			[
+				"roo",
+				"$rootScope	AngularJS"
+			],
+			[
+				"for",
+				"for	for …"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"prin",
+				"print_r"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/Project/redwine/frontend/views/favorite/list.php",
+			"settings":
+			{
+				"buffer_size": 1082,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Project/aw/common/config/main-local.php",
+			"settings":
+			{
+				"buffer_size": 1085,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Project/emds/nodes.php",
+			"settings":
+			{
+				"buffer_size": 219,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/Project/emds/sites/all/themes/emds/less_main/layout.less",
+			"settings":
+			{
+				"buffer_size": 4233,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/MF/Desktop/za.txt",
+			"settings":
+			{
+				"buffer_size": 1051,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "sy:cs",
+		"selected_items":
+		[
+			[
+				"sy:cs",
+				"Set Syntax: CSS"
+			],
+			[
+				"for",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"fo",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Snippet: bs3-pagination-small"
+			],
+			[
+				"sy",
+				"Set Syntax: HTML"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"sy:css",
+				"Set Syntax: CSS"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"sy:html",
+				"Set Syntax: HTML"
+			],
+			[
+				"sy:py",
+				"Set Syntax: Python"
+			],
+			[
+				"about",
+				"About"
+			],
+			[
+				"case",
+				"Convert Case: Upper Case"
+			],
+			[
+				"cas",
+				"Convert Case: Upper Case"
+			],
+			[
+				"",
+				"Convert Case: Lower Case"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"a",
+				"About"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 226.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os;pf = 'Package Control.sublime-package';ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) );open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Project/emds",
+		"/D/Project/emds/sites",
+		"/D/Project/emds/sites/all",
+		"/D/Project/emds/sites/all/themes",
+		"/D/Project/emds/sites/all/themes/emds",
+		"/D/Project/emds/sites/all/themes/emds/js",
+		"/D/Project/emds/sites/all/themes/emds/less_main"
+	],
+	"file_history":
+	[
+		"/D/MF/Desktop/wang/河南省服装协会设计制版培训中心.html",
+		"/D/MF/Desktop/需改动/index.html",
+		"/F/Soft/OS/boxes/puphpet-VAGRANTSLASH-ubuntu1404-x64/1.2/virtualbox/Vagrantfile",
+		"/D/Project/aw/frontend/views/second-hand/_sale_us_car.php",
+		"/D/MF/Desktop/za_ad_item.sql",
+		"/D/Project/aw/frontend/views/second-hand/detail.php",
+		"/D/Project/redwine/frontend/views/item/_single.php",
+		"/D/Project/redwine/requirements.php",
+		"/D/Project/redwine/api/modules/v1/seller/models/Shop.php",
+		"/C/Users/F/AppData/Local/Temp/scp06002/var/www/clients/client3/web9/web/frontend/web/index.php",
+		"/D/finley.com/JS/dataTables/dataTables13 row-selector.shtml",
+		"/D/Project/aw/common/config/main-local.php",
+		"/D/Project/redwine/common/config/main-local.php",
+		"/D/MF/Desktop/au_second_hand_car.sql",
+		"/D/MF/Desktop/SRServer测试程序及配置文件/SRServer",
+		"/D/Project/aw/README.md",
+		"/D/finley.com/JS/dataTables/include/header.html",
+		"/D/Project/aw/.git/config",
+		"/D/Project/redwine/frontend/controllers/PageController.php",
+		"/D/Project/redwine/frontend/config/main.php",
+		"/D/Project/aw/.git/info/exclude",
+		"/C/Users/F/AppData/LocalLow/Microsoft/F12/emulation/settings.json",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/administration_form_field_type_editor.html",
+		"/D/finley.com/JS/dataTables/dataTables3 Dynamic Create Table.html",
+		"/D/soft/xampp/apache/conf/httpd.conf",
+		"/D/Project/aw/sql/auto_world_yager_20150404.sql",
+		"/D/finley.com/JS/dataTables/Learn-shtml.shtml",
+		"/D/MF/Desktop/index.htm",
+		"/D/Project/redwine/backend/views/order/index.php",
+		"/D/Project/redwine/backend/models/BaseOrder.php",
+		"/D/finley.com/JS/dataTables/dataTables13 row-selector.html",
+		"/D/Project/redwine/backend/models/Order.php",
+		"/D/finley.com/JS/dataTables/dataTables10 edit.html",
+		"/D/MF/Desktop/info (1).log",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/administration_help_manager.html",
+		"/D/finley.com/Project/EDI/Registration/previous_information.html",
+		"/D/Project/redwine/console/controllers/OrderController.php",
+		"/D/MF/Desktop/info.log",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/administration_phone_carrier_editor.html",
+		"/D/finley.com/Project/EDI/Registration/student_information_form.html",
+		"/D/finley.com/JS/Basic/2.html",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/js/ckeditor/config.js",
+		"/D/MF/Desktop/info.log.1",
+		"/C/Users/F/AppData/Local/Temp/Rar$DRa0.855/info.log",
+		"/D/MF/Desktop/info.log.3",
+		"/D/MF/Desktop/info.log.2",
+		"/D/finley.com/22.php",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/administration_association_type_editor.html",
+		"/D/MF/Desktop/image/dialogs/image.js",
+		"/D/finley.com/html5/AAMy/Video/index.html",
+		"/D/finley.com/Project/EDI/Registration/medical_authorization.html",
+		"/D/finley.com/Project/EDI/Registration/master_agreement.html",
+		"/D/finley.com/Project/EDI/Registration/caregiver_affidavit.html",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/js/ckeditor/plugins/image/dialogs/image.js",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/js/bootstrap-ckeditor-modal-fix.js",
+		"/D/MF/Desktop/KdtApiClient.php",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/js/ckeditor/README.md",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/js/ckeditor/styles.js",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/js/ckeditor/build-config.js",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/js/ckeditor/ckeditor.js",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/js/ckeditor/adapters/jquery.js",
+		"/D/finley.com/Project/EDI/Registration/parent_information.html",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/form_create_person_attribute.html",
+		"/D/Project/redwine/backend/views/item/_form.php",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/form_add_entitlement.html",
+		"/D/Project/redwine/backend/views/layouts/main.php",
+		"/D/Project/redwine/vendor/zelenin/yii2-summernote-widget/SummernoteAsset.php",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/data/phoneCarriers.json",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/data/helpArticle.json",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/data/formfieldtype.json",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/css/summernote/summernote-bs3.css",
+		"/D/Project/redwine/vendor/bower/summernote/dist/summernote-bs3.css",
+		"/D/Project/redwine/vendor/bower/summernote/dist/summernote.css",
+		"/D/Project/redwine/backend/views/item/create.php",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/application_account_manager.html",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/administration_system_lockdown.html",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/css/dataTables/dataTables.responsive.css",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/D/Project/edi/demo.grasshopper/static/img/selectbox.png",
+		"/D/Project/edi/demo.grasshopper/static/img/appsIcon.svg",
+		"/D/finley.com/JS/dataTables/dataTables11 edit_OOP.html",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/js/bootstrap-validator.js",
+		"/D/finley.com/JS/dataTables/css/bootstrap.min.css",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/dataTables1.html",
+		"/D/finley.com/JS/dataTables/dataTables5 columns&columnDefs.html",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/js/validator.js",
+		"/D/finley.com/Project/msma/1/dataTables/index.html",
+		"/D/finley.com/JS/dataTables/data/data2.json",
+		"/D/finley.com/JS/dataTables/dataTables5.html",
+		"/D/finley.com/JS/dataTables/dataTables4.html",
+		"/D/finley.com/JS/dataTables/dataTables3.html",
+		"/D/finley.com/JS/dataTables/dataTables2.html",
+		"/D/finley.com/JS/dataTables/dataTables1.html",
+		"/D/finley.com/Project/EDI/RegistrationFormatted/js/registration.js",
+		"/D/finley.com/JS/plugins.js",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/application_release_notes.html",
+		"/D/MF/Desktop/ReplaceGoogleCDN-master/js/background.js",
+		"/D/MF/Desktop/dataTables.responsive.js",
+		"/D/soft/Tencent/QQDocument/285366184/FileRecv/bootstrap-table.js",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/data.json",
+		"/E/vagrant/precise/Vagrantfile",
+		"/D/finley.com/Project/renji/index.php",
+		"/D/MF/Desktop/guide_verify_site.site",
+		"/D/MF/Desktop/index.html",
+		"/E/vagrant/precise/testDB.php",
+		"/F/Person/黄/mulu/index.htm",
+		"/F/Person/黄/mulu/pic/B07.html",
+		"/E/vagrant/homestead/scripts/serve.sh",
+		"/E/vagrant/homestead/scripts/serve-hhvm.sh",
+		"/E/vagrant/homestead/Vagrantfile",
+		"/E/vagrant/homestead/readme.md",
+		"/E/vagrant/homestead/Homestead.yaml",
+		"/E/vagrant/cake/Vagrantfile",
+		"/D/Project/redwine/composer.json",
+		"/D/Project/redwine/vendor/composer/autoload_real.php",
+		"/D/finley.com/html5/Bootstrap/theme/themeforest-5495486-melon-flat-responsive-admin-template/Template/assets/js/plugins.js",
+		"/D/Project/redwine/common/config/params.php",
+		"/D/Project/redwine/backend/config/main-local.php",
+		"/D/Project/redwine/backend/config/params.php",
+		"/D/finley.com/DB/1.bat",
+		"/D/Project/aw/frontend/widgets/AwListView.php",
+		"/D/MF/Desktop/params-local.php",
+		"/D/Project/redwine/frontend/config/params-local.php",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/form_add_entitlement - 副本.html",
+		"/D/finley.com/html5/Bootstrap/theme/startbootstrap-sb-admin-2-1.0.1/index.html",
+		"/D/finley.com/html5/Bootstrap/theme/startbootstrap-sb-admin-2-1.0.1/js/sb-admin-2.js",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/js/plugins.js",
+		"/D/finley.com/Project/EDI/GrasshopperWireframes/index.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<project>",
+			"E:\\Project\\ntd.com.au\\aatm",
+			"D:\\finley.com\\PHP",
+			"E:\\MaFei\\Desktop\\renji",
+			"<project>",
+			"D:\\finley.com\\JS\\Angular\\code-20140626",
+			"<project>",
+			"D:\\finley.com\\JS\\Angular\\code-20140626",
+			"<project>",
+			"D:\\finley.com\\JS\\Angular",
+			"D:\\finley.com\\JS\\Angular\\angular-phonecat2\\app",
+			"D:\\finley.com\\JS\\Angular",
+			"D:\\Project\\ntd.com.au"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Options Indexes FollowS",
+			"ssl_module",
+			"shtml",
+			"x-server-parsed",
+			"openExpress",
+			"update",
+			"10091",
+			"defaults",
+			"'",
+			"请填写此字段",
+			"editable",
+			"x-btn-edit",
+			"UpdatedOn",
+			"        \"",
+			"left",
+			"editable-popup",
+			"datatable",
+			"max_connections",
+			"record_buffer",
+			"val",
+			"date",
+			"Info",
+			"I am",
+			"Browser",
+			"../img",
+			"<a",
+			"moreTpl",
+			"6",
+			"validated using regular",
+			"validated using regular ",
+			"validated using re",
+			" be validated using regu",
+			"p \"",
+			"modal-btn",
+			"/images",
+			"../images",
+			"$radius",
+			"radius",
+			"home-phone-mask",
+			"date",
+			"image",
+			"TODO",
+			"md",
+			"helpBlock",
+			"Godmother",
+			"value",
+			"option value=\"4\">Godmother</option>",
+			"detail",
+			"preItemDetailHtml",
+			"lName",
+			"      <",
+			">\n",
+			".24",
+			"api.beloved.finley.com",
+			"yager",
+			"finley",
+			"imagePathFormat",
+			"options",
+			"yiisoft",
+			"order_item",
+			"list",
+			"treeToList",
+			"typeahead",
+			"2014",
+			"MultiAjaxAutoComplete",
+			"e6",
+			"300italic",
+			"google",
+			"input",
+			"express",
+			"()></",
+			"clientId",
+			"');",
+			"i-checker",
+			"btn-checked-rev",
+			"<p></p>",
+			"110.197.2.169",
+			"model",
+			"update",
+			"title",
+			"keyword",
+			"renji",
+			"'",
+			"accordion-body",
+			"•	",
+			"style=\"width: 513px;\"",
+			"http://libs.useso.com/js/angular.js/1.2.16/angular.js",
+			"i-checker",
+			"google",
+			"modal-btn",
+			"query",
+			"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.js",
+			"Search",
+			"query",
+			"set_main_image",
+			"play-pause",
+			"play-pause.svg ",
+			"set_main_image",
+			"tab",
+			"glyphicons",
+			" \n",
+			"xml_file",
+			"pdo_mssql",
+			"exeu",
+			"1",
+			"json",
+			"forward",
+			"ctrl+1",
+			"				",
+			"list",
+			"\">\n",
+			"list",
+			"item",
+			"pop_content",
+			"foreach",
+			"sn",
+			"config",
+			"datetimepicker",
+			"sr-only",
+			"subPages",
+			"\",",
+			"Wed"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"",
+			"images",
+			"p\"",
+			"images",
+			"/images",
+			"xs",
+			"api.local.beloved999.com",
+			"finley",
+			"option",
+			"cart",
+			"",
+			"\"",
+			"",
+			"style=\"width: 100%;\"",
+			"D:\\finley.com\\JS\\Angular\\angular.js",
+			"http://libs.useso.com/js/angular.js/1.2.16/angular.js",
+			"'/js/province_city.xml'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/Project/redwine/frontend/views/favorite/list.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1082,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								461,
+								115
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/Project/aw/common/config/main-local.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1085,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/Project/emds/nodes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								122,
+								122
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/Project/emds/sites/all/themes/emds/less_main/layout.less",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 4233,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								901,
+								901
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 798.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/MF/Desktop/za.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1051,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								216,
+								152
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8 with BOM",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 327.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "dataTables.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\finley.com\\EDI\\RegistrationFormatted\\master_agreement.html"
+			],
+			[
+				"re",
+				"app\\replace.js"
+			],
+			[
+				"repal",
+				"app\\replace.html"
+			],
+			[
+				"cach",
+				"app\\$templateCache.js"
+			],
+			[
+				"d",
+				"C:\\Users\\Ma Fei\\Desktop\\1.txt"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\finley.com\\PHP\\OOP\\php-oop.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 234.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--#include file="include/header.html"-->
+    <title></title>
+</head>
+<style>
+
+</style>
+<body>
+
+
+<div class="container">
+
+    <h3>学习shtml</h3> 
+
+    <h4>将环境变量插入到页面中,文档名称</h4>
+    <code>echo var="DOCUMENT_NAME"</code>
+
+    <!--#echo var="DOCUMENT_NAME"-->
+
+    <h4>将环境变量插入到页面中，现在时间</h4>
+    <code>echo var="DATE_LOCAL"</code>
+    <!--#echo var="DATE_LOCAL"-->  
+
+
+    <!--#config timefmt="%Y年/%m月%d日星期%W北京时间%H:%M:%s，%Y年已过去了%j天今天是%Y年的第%U个星期"-->
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-2.1.3.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/dataTables/jquery.dataTables.js"></script>
+
+</body>
+</html>
