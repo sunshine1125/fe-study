@@ -3,7 +3,7 @@
 		<h2>{{title}}</h2>
 		<p>{{ turn }}</p>
 		<ul id="wrap">
-			<li class="btn" @click="playChess(i-1)" v-for="i in list"></li>
+			<li class="btn" @click="playChess(index,item.info)" v-for="(item,index) in lists">{{item.info}}</li>
 		</ul>
 		<button class="start" @click="reStart">重新开始</button>
 		<button class="cancel" @click="cancel">上一步</button>
@@ -16,9 +16,10 @@ export default{
 		return {
 			title : '井字棋',
 			turn: '该playerX了',
-			list : 9,
+			lists : [{info: ''},{info: ''},{info: ''},{info: ''},{info: ''},{info: ''},{info: ''},{info: ''},{info: ''}],
 			playerX : 'X',
 			playerO : 'O',
+			info: '',
 			flag : false,//是否已经有棋子
 			arrPlayx : [],//a棋的数组
 			arrPlayo : [],//b棋的数组
@@ -27,18 +28,18 @@ export default{
 		}
 	},
 	methods: {
-        playChess(i){
+        playChess(i,info){
+        	
         	if(!this.isAdd){
-        		//var html = event.target.innerHTML;
-	        	let oLi = document.getElementsByClassName('btn');
-	        	if(oLi[i].innerHTML===''){//如果所点击的li内容为空
+        		
+	        	if(info === ''){//如果所点击的li内容为空
 	        		if(this.flag){//如果flag为true
-	        			oLi[i].innerHTML = this.playerO;//填入“O”
+	        			this.lists[i].info = this.playerO;//填入“O”
 	        			this.turn = '该playerX了';
 	        			this.arrPlayo.push(i);
 	        			this.arrNum.push(i);
 	        		}else{
-	        			oLi[i].innerHTML = this.playerX;//否则填入"X"
+	        			this.lists[i].info = this.playerX;//否则填入"X"
 	        			this.turn = '该playerO了';
 	        			this.arrPlayx.push(i);
 	        			this.arrNum.push(i);
@@ -79,13 +80,13 @@ export default{
 		},
 		reStart(){//重新开始
 			let liDomList = document.getElementsByTagName('li');
-			if(liDomList[this.arrNum.length-1].innerHTML === 'X'){
+			if(this.lists[this.arrNum[this.arrNum.length-1]].info === 'X'){
 				this.turn = '该playerO了';
 			}else{
 				this.turn = '该playerX了';
 			}
 			for(let i = 0,len = this.arrNum.length; i < len; i++){//把对应的li的内容清空
-				liDomList[this.arrNum[i]].innerHTML = null;
+				this.lists[this.arrNum[i]].info = '';
 				liDomList[this.arrNum[i]].style.color = '#000';
 			}
 			this.arrNum.length = 0;//数组清空
@@ -99,13 +100,13 @@ export default{
 			if(this.isAdd === false){
 				if(len > 0 ){
 					let index  = this.arrNum[len-1];
-					let aLi = document.getElementsByTagName('li');
-					if(aLi[index].innerHTML === 'O'){
+					//let aLi = document.getElementsByTagName('li');
+					if(this.lists[index].info === 'O'){
 						this.removeByValue(this.arrPlayo,index);//把对应的元素从双方数组中删除
 					}else{
 						this.removeByValue(this.arrPlayx,index);//把对应的元素从双方数组中删除
 					}
-					aLi[index].innerHTML = null;
+					this.lists[index].info = '';
 					this.arrNum.pop();//把最后一个棋子的位置从数组里移除
 				}
 			}else{
