@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<style>
+.animate-show-hide.ng-hide {
+  opacity: 0;
+}
+
+.animate-show-hide.ng-hide-add,
+.animate-show-hide.ng-hide-remove {
+  transition: all linear 0.5s;
+}
+
+.check-element {
+  border: 1px solid black;
+  opacity: 1;
+  padding: 10px;
+}
+</style>
+<script src="../node_modules/angular/angular.min.js"></script>
+</head>
+<body ng-app>
+  Hide: <input type="checkbox" ng-model="checked" aria-label="Toggle ngHide"><br />
+  <div class="check-element animate-show-hide" ng-hide="checked">
+    I hide when your checkbox is checked.
+  </div>
+ </body>
+</html>

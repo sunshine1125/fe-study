@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<script src="../node_modules/angular/angular.min.js"></script>
+</head>
+<!--
+<body ng-app="controllerAsExample">
+  <div id="ctrl-as-exmpl" ng-controller="SettingsController1 as settings">
+    <label>Name: <input type="text" ng-model="settings.name"/></label>
+    <button ng-click="settings.greet()">greet</button><br/>
+    Contact:
+    <ul>
+      <li ng-repeat="contact in settings.contacts">
+        <select ng-model="contact.type" aria-label="Contact method" id="select_{{$index}}">
+           <option>phone</option>
+           <option>email</option>
+        </select>
+        <input type="text" ng-model="contact.value" aria-labelledby="select_{{$index}}" />
+        <button ng-click="settings.clearContact(contact)">clear</button>
+        <button ng-click="settings.removeContact(contact)" aria-label="Remove">X</button>
+      </li>
+      <li><button ng-click="settings.addContact()">add</button></li>
+   </ul>
+  </div>
+ </body>
+ <script >
+ angular.module('controllerAsExample', [])
+   .controller('SettingsController1', SettingsController1);
+
+ function SettingsController1() {
+   this.name = 'John Smith';
+   this.contacts = [
+     {type: 'phone', value: '408 555 1212'},
+     {type: 'email', value: 'john.smith@example.org'}
+   ];
+ }
+
+ SettingsController1.prototype.greet = function() {
+   alert(this.name);
+ };
+
+ SettingsController1.prototype.addContact = function() {
+   this.contacts.push({type: 'email', value: 'yourname@example.org'});
+ };
+
+ SettingsController1.prototype.removeContact = function(contactToRemove) {
+  var index = this.contacts.indexOf(contactToRemove);
+   this.contacts.splice(index, 1);
+ };
+
+ SettingsController1.prototype.clearContact = function(contact) {
+   contact.type = 'phone';
+   contact.value = '';
+ };
+</script>-->
+<body ng-app="controllerExample">
+  <div id="ctrl-exmpl" ng-controller="SettingsController2">
+    <label>Name: <input type="text" ng-model="name"/></label>
+    <button ng-click="greet()">greet</button><br/>
+    Contact:
+    <ul>
+      <li ng-repeat="contact in contacts">
+        <select ng-model="contact.type" id="select_{{$index}}">
+           <option>phone</option>
+           <option>email</option>
+        </select>
+        <input type="text" ng-model="contact.value" aria-labelledby="select_{{$index}}" />
+        <button ng-click="clearContact(contact)">clear</button>
+        <button ng-click="removeContact(contact)">X</button>
+      </li>
+      <li>[ <button ng-click="addContact()">add</button> ]</li>
+   </ul>
+  </div>
+  <script >
+  angular.module('controllerExample', [])
+    .controller('SettingsController2', ['$scope', SettingsController2]);
+
+  function SettingsController2($scope) {
+    $scope.name = 'John Smith';
+    $scope.contacts = [
+      {type:'phone', value:'408 555 1212'},
+      {type:'email', value:'john.smith@example.org'}
+    ];
+
+    $scope.greet = function() {
+      alert($scope.name);
+    };
+
+    $scope.addContact = function() {
+      $scope.contacts.push({type:'email', value:'yourname@example.org'});
+    };
+
+    $scope.removeContact = function(contactToRemove) {
+      var index = $scope.contacts.indexOf(contactToRemove);
+      $scope.contacts.splice(index, 1);
+    };
+
+    $scope.clearContact = function(contact) {
+      contact.type = 'phone';
+      contact.value = '';
+    };
+  }
+  </script>
+</body>
+</html>
