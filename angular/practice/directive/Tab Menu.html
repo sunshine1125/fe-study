@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<style>
+*, *:before, *:after {
+  margin:0; padding:0; list-style:none; outline:0; text-decoration:none;:
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family:arial;  color:#404040;
+ }
+body    { padding:50px; }
+html { height:100%;
+background: #b5bdc8;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2I1YmRjOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM2JSIgc3RvcC1jb2xvcj0iIzgyOGM5NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyODM0M2IiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #b5bdc8 0%, #828c95 36%, #28343b 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b5bdc8), color-stop(36%,#828c95), color-stop(100%,#28343b));
+background: -webkit-linear-gradient(top,  #b5bdc8 0%,#828c95 36%,#28343b 100%);
+background: -o-linear-gradient(top,  #b5bdc8 0%,#828c95 36%,#28343b 100%);
+background: -ms-linear-gradient(top,  #b5bdc8 0%,#828c95 36%,#28343b 100%);
+background: linear-gradient(to bottom,  #b5bdc8 0%,#828c95 36%,#28343b 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 );
+
+
+}
+
+%rounded-top {
+  -webkit-border-top-right-radius: 3px;
+   -webkit-border-top-left-radius: 3px;
+      -moz-border-radius-topright: 3px;
+       -moz-border-radius-topleft: 3px;
+          border-top-right-radius: 3px;
+           border-top-left-radius: 3px;
+}
+
+
+[data-tab-menu]{
+  position:relative;
+  z-index:1;
+  li { float:left; }
+  a  {
+    @extend %rounded-top;
+    display:block;
+    padding:10px 30px;
+    border:1px solid #ccc;
+    background:#f1f1f1;
+    margin-right:-1px;
+  }
+  a.active { border-bottom:1px solid #fff; background:#fff; }
+}
+
+section {
+  position:relative;
+  float:left;
+  clear:left;
+  display:block;
+  margin-top:-1px;
+  width:100%;
+  min-height:250px;
+  border:1px solid #ccc;
+  background:#fff;
+  padding:30px;
+
+-webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+        border-radius: 5px;
+-webkit-border-top-left-radius:0;
+   -moz-border-radius-topleft:0;
+       border-top-left-radius:0;
+
+-webkit-box-shadow: 0px 5px 10px -3px rgba(0, 0, 0, 0.2);
+-moz-box-shadow:    0px 5px 10px -3px rgba(0, 0, 0, 0.2);
+box-shadow:         0px 5px 10px -3px rgba(0, 0, 0, 0.2);
+}
+h2  { float:left; margin-right:-100%;}
+p   { float:left; clear:left; margin-right:-100%; }
+img { float:right; width:200px; height:auto;}
+
+.note  { display:none; }
+@media (max-width:570px){ img { clear:left; width:100%; margin-top:30px; }}
+@media (max-width:410px){ .note { display:block; float:left; width:100%; clear:left; margin:20px 0; font-size:12px; text-align:center; }}
+</style>
+<script src="../node_modules/angular/angular.min.js"></script>
+</head>
+<body>
+    <div data-ng-app="App" data-ng-controller="AppCtrl">
+
+       <ul data-tab-menu data-ng-model="ui.tabview">
+         <li><a href="tab1.html">Tab 1</a></li>
+         <li><a href="tab2.html">Tab 2</a></li>
+         <li><a href="tab3.html">Tab 3</a></li>
+       </ul>
+       <section data-ng-include="ui.tabview">
+         <!--
+            Tab Content Goes Here
+            Note! this section only renders
+            if a tab is selected
+         -->
+       </section>
+
+
+      <script type="text/ng-template" id="tab1.html">
+        <h2>Angular Tab Menu</h2>
+        <p>- a simple directive</p>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/68939/angular-logo.png" />
+        <p class="note">Stop! - I'm not that responsive ;-)</p>
+      </script>
+      <script type="text/ng-template" id="tab2.html"><h2>Tab 2 Content</h2></script>
+      <script type="text/ng-template" id="tab3.html"><h2>Tab 3 Content</h2></script>
+     </div>
+  </body>
+  <script >
+  console.clear();
+  //   Includes:
+  //   //ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js
+
+  var app = angular.module('App',[])
+    .directive('tabMenu',[function(){
+      return {
+        restrict:'A',
+        require: 'ngModel',
+        scope: { modelValue: '=ngModel' },  // modelValue for $watch
+        link:function(scope, element, attr, ngModel){
+
+            // Links collection
+            var links=element.find('a');
+
+            // Add click listeners
+            links.on('click',function(e){
+                e.preventDefault();
+                ngModel.$setViewValue( angular.element(this).attr('href') );
+                scope.$apply();
+            })
+
+            // State handling (set active) on model change
+            scope.$watch('modelValue',function(){
+              for(var i=0,l=links.length;i<l;++i){
+                var link = angular.element(links[i]);
+                link.attr('href') === scope.modelValue ?
+                link.addClass('active') : link.removeClass('active')
+              }
+            })
+        }
+      }
+    }])
+    .controller('AppCtrl',['$scope',function($scope){
+      $scope.ui = {};
+      $scope.ui.tabview = 'tab1.html';
+    }])
+
+</script>
+</html>

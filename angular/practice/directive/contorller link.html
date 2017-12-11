@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<script src="../node_modules/angular/angular.min.js"></script>
+</head>
+<body>
+    <div ng-controller="demoCtrl as demo">
+        <ul>
+          <li ng-repeat="item in demo.list"><hello item="item"></hello></li>
+        </ul>
+    </div>
+
+
+    <h3>嵌套directive的通讯及scope研究</h3>
+      <div my-grid height="500.1" width="300">
+          <div my-grid-row height="300">
+            <div my-grid-cell width=".33">
+            </div>
+            <div my-grid-cell width=".34">
+            </div>
+            <div my-grid-cell width=".33">
+            </div>
+          </div>
+          <div my-grid-row height="200">
+              <div my-grid-cell width=".5">
+              </div>
+              <div my-grid-cell width=".5">
+              </div>
+          </div>
+      </div>
+  </body>
+  <script >
+  angular.module('app', [])
+    .controller('demoCtrl', function() {
+      var demo = this;
+      demo.test = 'from  parent';
+      //
+      demo.list = [{
+        id: 1,
+        title: "Jack"
+      }, {
+        id: 3,
+        title: "Lucy"
+      }, {
+        id: 6,
+        title: "James"
+      }, {
+        id: 8,
+        title: "Wang"
+      }];
+    })
+    .directive('hello', function() {
+      return {
+        restrict: 'E',
+        replace: true,
+        scope:{
+          item: '=item'
+        },
+        controller: function($scope, $element, $attrs){
+          console.log($scope.item);
+        },
+        template: '<span>Hello, {{item.title}}</span>',
+        link: function($scope, $element, $attrs){
+          $element.on('click', function(){
+              alert($scope.item.id);
+          })
+        }
+      }
+    })
+
+
+
+
+  // 嵌套directive的通讯及scope研究
+
+  .directive("myGrid",function(){
+      return{
+        restrict:"A",
+        scope:{height:"@height",width:"@width"},
+        controller: function($scope) {
+            var self = this;
+            self.getGridHeight=function(){
+  　　　　　　return $scope.height;
+  　　　　　};
+            $scope.getGridHeight=function(){
+  　　　　　　return $scope.height;
+  　　　　　};
+  　　　　　$scope.getGridWidth=function(){
+  　　　　　　return $scope.width;
+  　　　　　};
+        },
+        link:function(scope,el,attrs){
+        }
+      };
+  })
+  .directive("myGridRow",function(){
+      return{
+        restrict:"A",
+        scope:true,
+        require:"^myGrid",
+        controller: function($scope) {
+          $scope.rowIndex = 1;
+        },
+        link:function(scope,el,attrs,gridCtrl){
+          G('gridCtrl');
+          G(gridCtrl.getGridHeight());
+        }
+      };
+  })
+  .directive("myGridCell",function(){
+      return{
+          restrict:"A",
+          scope:true,
+          require:"^myGridRow",
+          link:function(scope,el,attrs,rowCtrl){
+            G('rowCtrl');
+            G(rowCtrl);
+          }
+      };
+  });
+
+
+
+  function G(str){
+    return console.log(str)
+  }
+
+
+</script>
+</html>
