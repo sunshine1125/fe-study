@@ -1,0 +1,23 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body ng-app="MyApp">
+  <div ng-controller="ListCtrl">
+    <input type="text" placeholder="input your github name" ng-model="name">
+    <button ng-click="load()">查看github用户</button>
+
+    <div ng-if="list">
+      <img width="50" height="50" src="{{list.avatar_url}}" alt="">
+      <p>public_repos: {{list.public_repos}}</p>
+      <p>localtion: {{list.location}}</p>
+    </div>
+  </div>
+</body>
+
+</html>
