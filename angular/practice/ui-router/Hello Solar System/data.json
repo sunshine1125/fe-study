@@ -1,0 +1,26 @@
+[
+  {
+    "name"   : "Tom",
+    "id"     : 1,
+    "company": "Oppo",
+    "address": "GuangZhou"
+  },
+  {
+    "name"   : "Anna",
+    "id"     : 2,
+    "company": "Tencent",
+    "address": "HangZhou"
+  },
+  {
+    "name"   : "Tina",
+    "id"     : 3,
+    "company": "Lenovo",
+    "address": "BeiJing"
+  },
+  {
+    "name"   : "HaLi",
+    "id"     : 4,
+    "company": "OnePlus",
+    "address": "ShangHai"
+  }
+]
