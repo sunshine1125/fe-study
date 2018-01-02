@@ -2,47 +2,45 @@ var app = angular.module('helloSystem', ['ui.router']);
 
 app.config(function ($stateProvider) {
 
-  var helloState = {
-    name     : 'hello',
-    url      : '/hello',
-    component: 'hello'
-  };
-
-  var aboutState = {
-    name    : 'about',
-    url     : '/about',
-    template: '<h3>about page</h3>'
-  };
-
-  var peopleState = {
-    name     : 'people',
-    url      : '/people',
-    component: 'people',
-    resolve  : {
-      people: function (PeopleService) {
-        return PeopleService.getAllPeople();
+  var states = [
+    {
+      name     : 'hello',
+      url      : '/hello',
+      component: 'hello'
+    },
+    {
+      name    : 'about',
+      url     : '/about',
+      template: '<h3>about page</h3>'
+    },
+    {
+      name     : 'people',
+      url      : '/people',
+      component: 'people',
+      resolve  : {
+        people: function (PeopleService) {
+          return PeopleService.getAllPeople();
+        }
+      }
+    },
+    {
+      name     : 'people.person',
+      url      : '/{personId}',
+      component: 'person',
+      resolve  : {
+        person: function (people, $stateParams) {
+          return people.find(function (person) {
+            return person.id === $stateParams.personId;
+          })
+        }
       }
     }
-  };
+  ];
 
-  var personState = {
-    name     : 'person',
-    url      : '/people/{personId}',
-    component: 'person',
-    resolve  : {
-      person: function (PeopleService, $transition$) {
-        // return PeopleService.getPerson(2);
-        return PeopleService.getPerson($transition$.params().personId);
-      }
-    }
-  };
-
-  $stateProvider.state(helloState);
-  $stateProvider.state(aboutState);
-  $stateProvider.state(peopleState);
-  $stateProvider.state(personState);
+  states.forEach(function (state) {
+    $stateProvider.state(state);
+  })
 });
-
 app.service('PeopleService', ['$http', function ($http) {
   return {
     getAllPeople: getAllPeople,
@@ -63,16 +61,14 @@ app.service('PeopleService', ['$http', function ($http) {
       return people.find(personMatchesParam);
     });
   };
+
 }]);
-
-
 
 app.component('hello', {
   template  : '<h3>{{$ctrl.greeting}} Solar System!</h3>' +
-  '<button ng-click="$ctrl.toggleGreeting()">toggle greeting</button>',
+              '<button ng-click="$ctrl.toggleGreeting()">toggle greeting</button>',
   controller: function () {
     this.greeting = 'hello';
-
     this.toggleGreeting = function () {
       this.greeting = (this.greeting === 'hello') ? 'whats up' : 'hello';
     }
@@ -82,15 +78,19 @@ app.component('hello', {
 app.component('people', {
   bindings: {people: '<'},
 
-  template: '<h3>Some people:</h3>' +
-  '<pre>{{$ctrl | json}}</pre>' +
-  '<ul>' +
-  '<li ng-repeat="person in $ctrl.people">' +
-  '<a ui-sref="person({ personId: person.id })">' +
-  '{{person.name}}' +
-  '</a>' +
-  '</li>' +
-  '</ul>'
+  template: '<div>' +
+  '  <div>' +
+  '    <h3>Some people:</h3>' +
+  '    <ul>' +
+  '      <li ng-repeat="person in $ctrl.people">' +
+  '        <a ui-sref-active="active" ui-sref="people.person({ personId: person.id })">' +
+  '          {{person.name}}' +
+  '        </a>' +
+  '      </li>' +
+  '    </ul>' +
+  '  </div>' +
+  '  <ui-view></ui-view>' +
+  '</div>'
 });
 
 app.component('person', {
