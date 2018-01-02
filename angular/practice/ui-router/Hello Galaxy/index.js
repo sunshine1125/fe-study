@@ -30,7 +30,7 @@ app.config(function ($stateProvider) {
       resolve  : {
         person: function (people, $stateParams) {
           return people.find(function (person) {
-            return person.id === $stateParams.personId;
+            return person.id == $stateParams.personId;
           })
         }
       }

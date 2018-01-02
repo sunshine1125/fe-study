@@ -30,9 +30,8 @@ app.config(function ($stateProvider) {
     url      : '/people/{personId}',
     component: 'person',
     resolve  : {
-      person: function (PeopleService, $transition$) {
-        // return PeopleService.getPerson(2);
-        return PeopleService.getPerson($transition$.params().personId);
+      person: function (PeopleService, $stateParams, $transition$) {
+        return PeopleService.getPerson(parseInt($transition$.params().personId));
       }
     }
   };
