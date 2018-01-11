@@ -37,7 +37,7 @@
       </div>
       <md-content ng-if="!searchText">
         <md-list flex>
-          <h3 style="padding-left: 15px" ng-repeat="todo in todos">{{todo.title}}
+          <h3 style="padding-left: 15px" ng-repeat="todo in todos">{{searchText ? '' : todo.title}}
             <md-list-item style="border-bottom: 1px solid #ddd;border-top: 1px solid #ddd" class="md-3-line" ng-repeat="item in todo.child" ng-click="openPersonInfo($event, item)">
               <img ng-src="{{item.img}}" class="md-avatar" alt="{{item.name}}" />
               <div class="md-list-item-text" layout="column">
@@ -49,7 +49,7 @@
       </md-content>
       <md-content ng-if="searchText">
         <md-list flex>
-          <h3 ng-if="searchText != ''" style="padding-left: 15px" ng-repeat="todo in todos">{{todo.title}}
+          <h3 ng-if="searchText != ''" style="padding-left: 15px" ng-repeat="todo in todos">{{searchText ? '' : todo.title}}
             <md-list-item style="border-bottom: 1px solid #ddd;border-top: 1px solid #ddd" class="md-3-line"
                         ng-repeat="item in todo.child" ng-show="item.name == searchText"
                         ng-click="openPersonInfo($event, item)">

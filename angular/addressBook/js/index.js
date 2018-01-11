@@ -10,7 +10,9 @@ app.controller('addressBookController', ['$scope', 'addressData', '$mdDialog', f
     $scope.querySearch = function (query) {
       angular.forEach($scope.todos, function (value) {
         angular.forEach(value.child, function (value) {
-          $scope.searchData.push(value);
+          if($scope.searchData.indexOf(value) == -1) {
+            $scope.searchData.push(value);
+          }
         })
       });
       $scope.states = $scope.searchData;
